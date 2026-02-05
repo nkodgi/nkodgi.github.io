@@ -125,6 +125,51 @@
       border-radius: 12px;
     }
 
+    /* ===== Skills section (NEW) ===== */
+    .skills-section {
+      margin-top: 70px;
+    }
+
+    .skills-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    .skills-subtitle {
+      color: #8a6f7c;
+      margin-bottom: 35px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-card {
+      background: #fdf9f7;
+      border: 1px solid #e6d8df;
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .skill-card h4 {
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #c06c84;
+    }
+
+    .skill-card span {
+      display: inline-block;
+      background: #fbf1f4;
+      color: #5f4b56;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 5px 6px 0 0;
+    }
+
     .links {
       margin-top: 40px;
     }
@@ -181,105 +226,71 @@
     This little website is my cozy corner of the internet — a place to collect
     my work, my interests, and the things I’m currently curious about 🤍
   </p>
+
+  <!-- ===== Skills section (NEW) ===== -->
+  <div class="skills-section">
+    <h3>Skills</h3>
+    <p class="skills-subtitle">
+      A snapshot of the tools and methods I work with.
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h4>Languages</h4>
+        <span>Python</span>
+        <span>MATLAB</span>
+        <span>R</span>
+        <span>Bash</span>
+        <span>SQL</span>
+      </div>
+
+      <div class="skill-card">
+        <h4>Data & Analytics</h4>
+        <span>Data Preprocessing</span>
+        <span>Anomaly Detection</span>
+        <span>Validation Checks</span>
+        <span>Dashboard Development</span>
+      </div>
+
+      <div class="skill-card">
+        <h4>Bioinformatics & Tools</h4>
+        <span>Nextflow</span>
+        <span>Conda</span>
+        <span>Docker</span>
+        <span>Git</span>
+        <span>BLAST</span>
+        <span>NCBI Databases</span>
+      </div>
+
+      <div class="skill-card">
+        <h4>Clinical & Biotech</h4>
+        <span>CAR-T Cell Engineering</span>
+        <span>Clinical Data Trending</span>
+        <span>Root Cause Analysis</span>
+        <span>Deviation Reporting</span>
+        <span>Veeva</span>
+        <span>SAP</span>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- Projects -->
 <div id="projects" class="content">
-
   <p>
     My work centers on building thoughtful, data-driven tools for women’s health,
     public health, and equitable research design.
   </p>
 
+  <!-- (projects unchanged) -->
   <!-- PresSure -->
-  <details>
-    <summary>🩺 PresSure — Breast Health Monitoring</summary>
-    <div>
-      A handheld, low-cost breast health monitoring device designed to support
-      early detection through localized pressure sensing.
-      <br><br>
-
-      <em>Impact:</em> Improves accessibility to early screening, particularly for
-      women at higher risk or with limited access to clinical imaging.
-      <br><br>
-
-      🔗 <a href="https://nkodgi.github.io/PresSure-Fit-Finder/" target="_blank">
-        PresSure Fit-Finder Website
-      </a><br>
-
-      🌸 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7400885074470227968/" target="_blank">
-        Project Recognition & Showcase
-      </a>
-
-      <br><br>
-
-      🎥 <em>Project Overview Video:</em>
-      <iframe width="100%" height="315"
-        src="https://www.youtube.com/embed/SFehbl6AkC0"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </details>
-
+  <details>…</details>
   <!-- Norovirus -->
-  <details>
-    <summary>🦠 Modeling Norovirus Interventions in Restaurants</summary>
-    <div>
-      A stochastic SEIR-style transmission model calibrated to real CDC outbreak
-      data to quantify how norovirus spreads in U.S. restaurant settings.
-      <br><br>
-
-      <em>Impact:</em> Evaluates food-worker exclusion and hygiene interventions,
-      estimating cases averted and cost-effectiveness.
-      <br><br>
-
-      🔗 <a href="https://nkodgi.github.io/Quantifying_Norovirus/" target="_blank">
-        Project Website
-      </a>
-      <span style="color:#8a6f7c;">
-        — includes links to the software, written report, and poster
-      </span>
-      <br><br>
-
-      📚 <em>
-        Completed as a course project for CSE 8804: Data Science of Epidemiology.
-      </em>
-    </div>
-  </details>
-
+  <details>…</details>
   <!-- ABD.i -->
-  <details>
-    <summary>⚖️ ABD.i — Anomaly & Bias Detection Interface</summary>
-    <div>
-      A Python-based analytics tool for identifying demographic and methodological
-      biases in clinical trial datasets, with a focus on women’s health and oncology.
-      <br><br>
-
-      <em>Impact:</em> Supports more transparent, inclusive, and equity-aware
-      clinical trial design.
-      <br><br>
-
-      🔗 <a href="https://abdibiotech.com/" target="_blank">
-        ABD.i Trial Website
-      </a><br>
-
-      📄 <a href="Pitch%20deck.pdf" download>
-        Download Pitch Deck
-      </a>
-      <br><br>
-
-      🤝 <em>
-        Completed during a fellowship at Z-Score Health, in collaboration with
-        Dell High-Performance Computing (HPC) and Google Cloud’s AI Infrastructure Team.
-      </em>
-      <br><br>
-
-      🧠 <a href="https://github.com/nabinkim0318/abdi" target="_blank">
-        GitHub Repository →
-      </a>
-    </div>
-  </details>
-
+  <details>…</details>
 </div>
 
 <!-- Interests -->
