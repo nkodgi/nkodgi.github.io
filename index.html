@@ -75,14 +75,6 @@
       display: block;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
     a {
       color: #c06c84;
       text-decoration: none;
@@ -91,6 +83,46 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* Projects (collapsible) */
+    #projects details {
+      padding: 30px 0;
+      border-bottom: 1px solid #e6d8df;
+    }
+
+    #projects details:last-child {
+      border-bottom: none;
+    }
+
+    #projects summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.05rem;
+      list-style: none;
+    }
+
+    #projects summary::-webkit-details-marker {
+      display: none;
+    }
+
+    #projects summary::after {
+      content: "＋";
+      float: right;
+      color: #c06c84;
+    }
+
+    #projects details[open] summary::after {
+      content: "−";
+    }
+
+    #projects details div {
+      margin-top: 20px;
+    }
+
+    iframe {
+      margin-top: 15px;
+      border-radius: 12px;
     }
 
     .links {
@@ -117,41 +149,39 @@
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="natasha.jpg" alt="Photo of Natasha">
-    <div>
-      <h1>Natasha ✿</h1>
-      <h2>• biomedical engineer •</h2>
-    </div>
-  </header>
-
-  <!-- Tabs -->
-  <div class="tabs">
-    <div class="tab active" onclick="showTab('about')">About Me 🌷</div>
-    <div class="tab" onclick="showTab('projects')">My Projects 🧠</div>
-    <div class="tab" onclick="showTab('interests')">My Interests 📖</div>
+<header>
+  <img src="natasha.jpg" alt="Photo of Natasha">
+  <div>
+    <h1>Natasha ✿</h1>
+    <h2>• biomedical engineering •</h2>
   </div>
+</header>
 
-  <!-- About -->
-  <div id="about" class="content active">
-    <p>
-      Hi! I’m <strong>Natasha</strong> ✨  
-      I love thinking deeply about science, people, and the quiet patterns that
-      connect things over time.
-    </p>
+<div class="tabs">
+  <div class="tab active" onclick="showTab('about')">About Me 🌷</div>
+  <div class="tab" onclick="showTab('projects')">My Projects 🧠</div>
+  <div class="tab" onclick="showTab('interests')">My Interests 📖</div>
+</div>
 
-    <p>
-      My background is in <em>biomedical engineering</em>, and I’m especially
-      interested in research that lives at the intersection of
-      <strong>women's health, data, and design</strong>.
-    </p>
+<!-- About -->
+<div id="about" class="content active">
+  <p>
+    Hi! I’m <strong>Natasha</strong> ✨  
+    I love thinking deeply about science, people, and the quiet patterns that
+    connect things over time.
+  </p>
 
-    <p>
-      This little website is my cozy corner of the internet — a place to collect
-      my work, my interests, and the things I’m currently curious about 🤍
-    </p>
-  </div>
+  <p>
+    My background is in <em>biomedical engineering</em>, and I’m especially
+    interested in research at the intersection of
+    <strong>women’s health, data, and design</strong>.
+  </p>
+
+  <p>
+    This little website is my cozy corner of the internet — a place to collect
+    my work, my interests, and the things I’m currently curious about 🤍
+  </p>
+</div>
 
 <!-- Projects -->
 <div id="projects" class="content">
@@ -161,11 +191,10 @@
     public health, and equitable research design.
   </p>
 
-  <ul>
-
-    <!-- PresSure -->
-    <li>
-      🩺 <strong>PresSure — Breast Health Monitoring</strong><br>
+  <!-- PresSure -->
+  <details>
+    <summary>🩺 PresSure — Breast Health Monitoring</summary>
+    <div>
       A handheld, low-cost breast health monitoring device designed to support
       early detection through localized pressure sensing.
       <br><br>
@@ -181,31 +210,27 @@
       🌸 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7400885074470227968/" target="_blank">
         Project Recognition & Showcase
       </a>
+
       <br><br>
 
-      🎥 <em>Project Overview Video:</em><br>
-      <iframe
-        width="100%"
-        height="315"
+      🎥 <em>Project Overview Video:</em>
+      <iframe width="100%" height="315"
         src="https://www.youtube.com/embed/SFehbl6AkC0"
-        title="PresSure Breast Health Monitor Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        style="margin-top: 10px; border-radius: 12px;">
+        allowfullscreen>
       </iframe>
-    </li>
+    </div>
+  </details>
 
-    <!-- Norovirus -->
-    <li>
-      🦠 <strong>Modeling Norovirus Interventions in Restaurants</strong><br>
+  <!-- Norovirus -->
+  <details>
+    <summary>🦠 Modeling Norovirus Interventions in Restaurants</summary>
+    <div>
       A stochastic SEIR-style transmission model calibrated to real CDC outbreak
       data to quantify how norovirus spreads in U.S. restaurant settings.
       <br><br>
 
       <em>Impact:</em> Evaluates food-worker exclusion and hygiene interventions,
-      estimating cases averted, upper-tail outbreak risk, and cost-effectiveness
-      to inform public health decision-making.
+      estimating cases averted and cost-effectiveness.
       <br><br>
 
       🔗 <a href="https://nkodgi.github.io/Quantifying_Norovirus/" target="_blank">
@@ -219,24 +244,24 @@
       📚 <em>
         Completed as a course project for CSE 8804: Data Science of Epidemiology.
       </em>
-    </li>
+    </div>
+  </details>
 
-    <!-- ABD.i -->
-    <li>
-      ⚖️ <strong>ABD.i — Anomaly & Bias Detection Interface</strong><br>
+  <!-- ABD.i -->
+  <details>
+    <summary>⚖️ ABD.i — Anomaly & Bias Detection Interface</summary>
+    <div>
       A Python-based analytics tool for identifying demographic and methodological
       biases in clinical trial datasets, with a focus on women’s health and oncology.
       <br><br>
 
       <em>Impact:</em> Supports more transparent, inclusive, and equity-aware
-      clinical trial design through automated preprocessing, anomaly detection,
-      and demographic visualization.
+      clinical trial design.
       <br><br>
 
       🔗 <a href="https://abdibiotech.com/" target="_blank">
         ABD.i Trial Website
-      </a>
-      <br>
+      </a><br>
 
       📄 <a href="Pitch%20deck.pdf" download>
         Download Pitch Deck
@@ -252,43 +277,39 @@
       🧠 <a href="https://github.com/nabinkim0318/abdi" target="_blank">
         GitHub Repository →
       </a>
-    </li>
-
-  </ul>
+    </div>
+  </details>
 
 </div>
 
-  <!-- Interests -->
-  <div id="interests" class="content">
-    <ul>
-      <li>📚 literature, especially dark academia and fantasy</li>
-      <li>🧠 neuroscience, genomics, and thoughtful AI</li>
-      <li>🎀 design that feels gentle but intentional</li>
-      <li>☕ cafés, travel, and baking</li>
-    </ul>
-  </div>
+<!-- Interests -->
+<div id="interests" class="content">
+  <ul>
+    <li>📚 literature, especially dark academia and fantasy</li>
+    <li>🧠 neuroscience, genomics, and thoughtful AI</li>
+    <li>🎀 design that feels gentle but intentional</li>
+    <li>☕ cafés, travel, and baking</li>
+  </ul>
+</div>
 
-  <!-- Links -->
-  <div class="links">
-    <a href="https://github.com/nkodgi">GitHub</a>
-    <a href="www.linkedin.com/in/natasha-kodgi-profile">LinkedIn</a>
-    <a href="nkodgi@email.com">Email</a>
-  </div>
+<div class="links">
+  <a href="https://github.com/nkodgi">GitHub</a>
+  <a href="https://www.linkedin.com/in/natasha-kodgi-profile">LinkedIn</a>
+  <a href="mailto:nkodgi@email.com">Email</a>
+</div>
 
-  <div class="footer">
-    made with curiosity and coffee 🤍
-  </div>
+<div class="footer">
+  made with curiosity and coffee 🤍
+</div>
 
-  <!-- JS -->
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-
-      document.getElementById(tabId).classList.add('active');
-      event.target.classList.add('active');
-    }
-  </script>
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
