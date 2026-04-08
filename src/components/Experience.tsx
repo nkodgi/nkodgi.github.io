@@ -38,7 +38,7 @@ const experiences = [
     type: "Research",
     roles: [
       {
-        role: "Graduate Researcher, PresSure Breast Health Monitor",
+        role: "Graduate Engineering Researcher, PresSure Breast Health Monitor",
         period: "May 2025 – Present",
         description: [
           "Designed and prototyped a pressure-based biomedical sensing device for early breast abnormality detection using force-sensitive resistor (FSR) sensors integrated with an air-bladder system.",
@@ -57,34 +57,36 @@ const experiences = [
     type: "Research",
     roles: [
       {
-        role: "Ascendia® Innovation & Research Fellow (ABD.i Co-Founder)",
+        role: "Ascendia® Innovation & Research Graduate Fellow (ABD.i Co-Founder)",
         period: "May 2025 – August 2025",
         description: [
-          "Co-founded and developed an early-stage clinical informatics analytics product (ABD.i) through a venture-oriented biomedical research fellowship.",
-          "Built a modular analytics workflow to identify data quality issues, trends, and demographic bias in clinical trial spreadsheets.",
-          "Designed a Streamlit-based interface for interactive exploration of patient distributions and inequities in trial design.",
+          "Developed an end-to-end clinical trial data analytics workflow to process high-missingness TNBC datasets, identifying data quality issues, demographic bias, and trend anomalies.",
+          "Designed and deployed an interactive Streamlit dashboard enabling non-technical stakeholders to explore trial design metrics and inform protocol decisions.",
+          "Acted as the technical-to-clinical translation layer, communicating data-driven insights to non-technical leadership and aligning analytics outputs with clinical decision-making needs.",
+          "Co-founded ABD.i within a venture-oriented fellowship, iterating on product features based on user feedback and operating in a resource-constrained, startup environment.",
         ],
       },
     ],
-    tags: ["Clinical Informatics", "Streamlit", "Python", "Data Analytics"],
+    tags: ["Clinical Informatics", "Health Equity", "Clinical Trials", "Product Development"],
   },
   {
-    company: "Leidos Biomedical Research",
+    company: "Leidos Biomedical Research (NCI/NIH)",
     location: "United States",
     period: "September 2022 – December 2024",
     type: "Professional",
     roles: [
       {
-        role: "CAR T-Cell Therapy Associate",
+        role: "CAR T-Cell Therapy Specialist",
         period: "September 2022 – December 2024",
         description: [
-          "Supported GD2, CD33, and STEAP CAR-T clinical programs via batch-level data analysis with Python and Excel, deviation tracking, and GMP-compliant documentation.",
-          "Managed the setup and operation of CliniMACS Prodigies for all CAR T-cell therapy patient runs, ensuring precision and compliance to FDA GMP standards.",
-          "Partnered with R&D to execute tech transfer and scale-up of GMP cell therapy processes using Lean Six Sigma methods.",
+          "Performed batch-level data analysis across CAR-T clinical manufacturing programs, monitoring key performance indicators, tracking production deviations, and identifying cross-batch trends to support manufacturing reliability.",
+          "Collaborated with R&D teams during technology transfer and process scale-up, gaining cross-functional insight into the evolution of lab workflows, instrumentation data, and documentation requirements from research to clinical manufacturing.",
+          "Worked within a GxP-adjacent setting, managing batch records, deviation tracking, and documentation with auditability requirements, building familiarity with data integrity and chain-of-custody standards.",
+          "Managed and analyzed heterogeneous assay and instrument data across cell therapy workflows, including cell viability, transduction efficiency, and product characterization metrics.",
         ],
       },
     ],
-    tags: ["CAR T-Cell", "GMP", "Python", "FDA Compliance", "Lean Six Sigma"],
+    tags: ["CAR T-Cell Engineering", "Bioprocess Data", "Process Optimization", "FDA Compliance", "Lean Six Sigma"],
   },
   {
     company: "Emergent BioSolutions",
