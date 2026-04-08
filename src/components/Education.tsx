@@ -66,15 +66,10 @@ export function Education() {
                         <h3 className="font-semibold text-foreground flex items-center gap-2"><GraduationCap className="h-5 w-5 text-primary"/>{edu.degree}</h3>
                         {edu.specialization && <p className="text-sm pl-7">Specialization: {edu.specialization}</p>}
                         {edu.gpa && <p className="text-sm pl-7">GPA: {edu.gpa}</p>}
-                        {edu.grade && <p className="text-sm pl-7">Grade: {edu.grade}</p>}
+
                       </div>
 
-                      {edu.content?.coursework && (
-                          <div>
-                              <h4 className="font-semibold text-foreground flex items-center gap-2 mb-1"><BookOpen className="h-5 w-5 text-primary"/>Relevant Coursework</h4>
-                              <p className="pl-7">{edu.content.coursework}</p>
-                          </div>
-                      )}
+
                        {edu.content?.involvement && edu.content.involvement.length > 0 && (
                           <div>
                               <h4 className="font-semibold text-foreground flex items-center gap-2 mb-1"><Users className="h-5 w-5 text-primary"/>Campus Involvement & Leadership</h4>
