@@ -50,9 +50,15 @@ export default function AboutPage() {
                         </a>
                     </div>
                     <div className="flex items-center gap-3">
+                        <Phone className="h-5 w-5 text-primary" />
+                        <a href="tel:+12404815588" className="text-foreground/80 hover:text-primary">
+                        (240) 481-5588
+                        </a>
+                    </div>
+                    <div className="flex items-center gap-3">
                         <Linkedin className="h-5 w-5 text-primary flex-shrink-0" />
                         <Link href="https://linkedin.com/in/natasha-kodgi-profile" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary truncate">
-                        linkedin.com/natasha
+                        linkedin.com/natasha-kodgi
                         </Link>
                     </div>
                     <div className="flex items-center gap-3">
