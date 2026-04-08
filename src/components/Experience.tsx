@@ -29,11 +29,30 @@ const experiences = [
         ],
       },
     ],
-    tags: ["EHR", "MedConnect", "Clinical Workflows", "Patient Data"],
+    tags: ["EHR", "MedConnect", "Cerner Millenium", "Oracle Health", "Clinical Workflows", "Patient Data"],
+  },
+  {
+    company: "Uncommon Sense Labs",
+    location: "United States",
+    period: "May 2025 – Present",
+    type: "Research",
+    roles: [
+      {
+        role: "Graduate Researcher, PresSure Breast Health Monitor",
+        period: "May 2025 – Present",
+        description: [
+          "Designed and prototyped a pressure-based biomedical sensing device for early breast abnormality detection using force-sensitive resistor (FSR) sensors integrated with an air-bladder system.",
+          "Conducted experimental validation on breast phantom models, generating quantitative performance metrics for sensitivity and spatial detection accuracy.",
+          "Developed a Streamlit-based data visualization tool to convert raw sensor outputs into clinically interpretable heatmaps for localized anomaly detection.",
+          "Presented the PresSure device at Georgia Institute of Technology’s SX Summit Genesis Competition, achieving 3rd place for innovation and translational potential.",
+        ],
+      },
+    ],
+    tags: ["Women’s Health", "Human-Centered Design", "Breast Health Monitoring Device", "Translational Health Technology"],
   },
   {
     company: "Z-Score Health",
-    location: "Remote",
+    location: "United States",
     period: "May 2025 – August 2025",
     type: "Research",
     roles: [
